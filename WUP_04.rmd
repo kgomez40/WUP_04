@@ -42,6 +42,14 @@ ourdata<- read.csv(file="GSScsv.csv")
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+basicCN <- ggplot(ourdata,aes(x=DEGREE,y=WORDSUM))
+
+basicCN + geom_boxplot()
+```
+
+The graduate box shows a median that is much higher than the high school and lt high school box. Which means that in the WORDSUM test there is a great difference between graduate degrees and high school and lt high school degrees. 
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
