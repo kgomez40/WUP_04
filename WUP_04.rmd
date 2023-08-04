@@ -82,3 +82,5 @@ There are two conditions where the score on the degree are statistically differe
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+In conclusion, we first looked at the problem we were given which was a numerical~categorical problem. It had 5 different categories and we ended up with 10 different t-test where we looked at the confidence intervals between the two means. The graduate degrees and the high school degree were greatly different and the graduate and lt high school degrees were also different.
