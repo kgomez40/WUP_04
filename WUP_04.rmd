@@ -26,6 +26,12 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 <!--Mention that you intend to use chatGPT to the greatest extent possible. Give credit to chatGPT when you use it to create code in your report. Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+We first need to take a look at the data to attain the correct helper file. Then, we will upload the data and examine what results we are given. According to what we saw in ourdata, WORDSUM is a numerical variable and DEGREE is a factor variable. Which means we will need to upload the numerical~categorical helper file.  
+
+```{r}
+ourdata<- read.csv(file="GSScsv.csv")
+```
+
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
