@@ -64,6 +64,20 @@ The numerical results show that the average for graduate school is 10.1 and the 
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+model1 <- aov(WORDSUM~DEGREE,data=ourdata)
+summary.aov(model1)
+```
+
+The inferential results show a p-value of 0.000236. Which represents the chances that we could get the data under the same conditions, resulting that there is no difference between each degree. According to the data, there seems to be a difference. Therefore, we reject the null hypothesis. 
+
+```{r}
+#we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
+par(mar = c(3, 18.2, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
+
+There are two conditions where the score on the degree are statistically different. Which are between high school and graduate school and the other is between lt high school and graduate school.
 
 # Discussion and Conclusion
 
